@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'iran-sans-regular';
+    src: url('../fonts/IRANSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'iran-sans-bold';
+    src: url('../fonts/IRAN\ Sans\ Bold.ttf') format('truetype');
+}
+
+:root {
+    --font-regular: 'iran-sans-regular';
+    --font-bold: 'iran-sans-bold';
+    --gap-15: 15px;
+    --gap-20: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: var(--font-regular);
+}
+
+html {
+    font-size: 13px;
+}
+
+img {
+    object-fit: cover;
+}
+
+i {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* =================================================================================================== */
+/* sm */
+
+@media screen and (min-width:576px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* =================================================================================================== */
+/* md */
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/* =================================================================================================== */
+/* lg */
+
+@media screen and (min-width:992px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* =================================================================================================== */
+/* xl */
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 17px;
+    }
+}
