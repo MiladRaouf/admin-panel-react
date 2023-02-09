@@ -2,9 +2,9 @@ import AdminIndex from "./layouts/admin/AdminIndex";
 
 function App() {
   return (
-    <main>
+    <section>
       <AdminIndex />
-    </main>
+    </section>
   );
 }
 

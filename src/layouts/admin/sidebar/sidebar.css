@@ -1,0 +1,71 @@
+/* =================================================================================================== */
+/* xs */
+
+.sidebar {
+    overflow: hidden;
+    position: fixed;
+    margin-top: 10px;
+    right: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: unset;
+    margin: unset;
+    list-style: none;
+    overflow: hidden;
+    background: #0000008f;
+    backdrop-filter: blur(30px);
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.sidebar i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .item {
+    margin: unset;
+    padding-left: 0;
+    width: 0;
+    transition: padding 0.2s;
+    opacity: 0;
+}
+
+.sidebar li:hover .item{
+    width: fit-content;
+    padding-left: 15px;
+}
+
+.sidebar a:hover {
+    color: #4bff03;
+}
+
+.sidebar ul:hover .item {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+/* =================================================================================================== */
+/* sm */
+/* =================================================================================================== */
+/* md */
+/* =================================================================================================== */
+/* lg */
+/* =================================================================================================== */
+/* xl */
