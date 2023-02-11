@@ -11,8 +11,7 @@
 :root {
     --font-regular: 'iran-sans-regular';
     --font-bold: 'iran-sans-bold';
-    --gap-15: 15px;
-    --gap-20: 20px;
+    --button-hover: #4bff03;
 }
 
 * {

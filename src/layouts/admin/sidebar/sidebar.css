@@ -5,16 +5,15 @@
     overflow: hidden;
     position: fixed;
     margin-top: 10px;
-    right: 10px;
+    right: -200px;
+    transition: 0.47s ease;
     border-radius: 8px;
-    display: flex;
-    justify-content: center;
+    z-index: 10;
 }
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: unset;
     margin: unset;
     list-style: none;
@@ -34,6 +33,7 @@
 .sidebar i {
     width: 50px;
     height: 50px;
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,16 +47,24 @@
     opacity: 0;
 }
 
-.sidebar li:hover .item{
-    width: fit-content;
-    padding-left: 15px;
-}
-
 .sidebar a:hover {
-    color: #4bff03;
+    color: var(--button-hover);
 }
 
 .sidebar ul:hover .item {
+    width: fit-content;
+    padding-left: 15px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.sidebar-show {
+    right: 10px;
+}
+
+.item.sidebar-open {
+    width: fit-content;
+    padding-left: 15px;
     opacity: 1;
     transition: opacity 0.5s;
 }
