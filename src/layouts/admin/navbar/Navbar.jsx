@@ -1,8 +1,6 @@
-import './navbar.css';
-
 const Navbar = ({ menuBars, setMenuBars, openSidebar, setOpenSidebar }) => {
     return (
-        <section className='navbar-section'>
+        <section id='navbar-section'>
             <nav className='container-fluid'>
                 <article className='account'>
                     <figure>

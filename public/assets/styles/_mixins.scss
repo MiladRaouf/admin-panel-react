@@ -1,0 +1,27 @@
+@mixin textSorter($lineClamp, $lineHeight) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lineClamp;
+    line-height: $lineHeight;
+    overflow-y: hidden;
+    word-break: break-all;
+}
+
+@mixin flexibleCenterElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin setMediaQuery($size){
+    @media screen and (min-width:#{$size}px){
+        @content;
+    }
+}
+
+@mixin setFontFace($name, $url, $format) {
+    @font-face {
+        font-family: $name;
+        src: url($url) format($format);
+    }
+}

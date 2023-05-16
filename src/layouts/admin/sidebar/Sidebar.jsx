@@ -1,5 +1,3 @@
-import './sidebar.css'
-
 const Sidebar = ({ menuBars, openSidebar }) => {
     const menuItems = [
         {
@@ -26,7 +24,7 @@ const Sidebar = ({ menuBars, openSidebar }) => {
     ];
 
     return (
-        <aside className={`sidebar ${menuBars ? 'sidebar-show' : ''}`}>
+        <aside id='sidebar' className={`${menuBars ? 'sidebar-show' : ''}`}>
             <ul>
                 {
                     menuItems.map(item => {

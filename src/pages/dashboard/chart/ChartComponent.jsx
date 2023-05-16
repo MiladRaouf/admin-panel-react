@@ -1,4 +1,3 @@
-import './chartComponent.css';
 import React, { Component } from "react";
 import ReactApexChart from 'react-apexcharts';
 
@@ -60,9 +59,12 @@ class ChartComponent extends Component {
 
   render() {
     return (
-      <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={450} />
-      </div>
+      <section id='bar-chart'>
+        <h1 className='title'>پر فروشترین محصولات</h1>
+        <div className='chart' id="chart">
+          <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={450} />
+        </div>
+      </section>
     )
   }
 }
