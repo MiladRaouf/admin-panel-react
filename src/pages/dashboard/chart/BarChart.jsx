@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactApexChart from 'react-apexcharts';
 
-class ChartComponent extends Component {
+class BarChart extends Component {
   constructor(props) {
     super(props);
 
@@ -69,4 +69,4 @@ class ChartComponent extends Component {
   }
 }
 
-export default ChartComponent;
+export default BarChart;

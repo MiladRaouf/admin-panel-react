@@ -1,13 +1,13 @@
 import Cards from "./card/Cards";
-import ChartComponent from "./chart/ChartComponent";
+import BarChart from "./chart/BarChart";
 
-const IndexDashboard = () => {
+const Dashboard = () => {
     return (
         <section id="dashboard" className="container-xxl">
             <Cards />
-            <ChartComponent />
+            <BarChart />
         </section>
     );
 }
 
-export default IndexDashboard;
+export default Dashboard;

@@ -57,13 +57,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+th {
   font-weight: unset;
 }
 
 #navbar-section {
   background: #666;
   font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 #navbar-section nav {
   color: #fff;
@@ -261,4 +265,44 @@ h6 {
   text-align: center;
   color: #555;
   font-family: "iran-sans-bold";
+}
+
+#product {
+  margin-top: 20px;
+}
+#product table {
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 0 #ddd;
+}
+#product thead {
+  background: royalblue;
+  color: #fff;
+}
+#product tr {
+  display: flex;
+  align-items: center;
+}
+#product :is(th, td) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 2.5rem;
+  overflow-y: hidden;
+  word-break: break-all;
+  text-align: center;
+  flex-basis: 50px;
+  padding: 0 3px;
+}
+#product :is(th, td):not(#product :is(th, td):last-of-type) {
+  border-left: 1px solid #fff;
+}
+#product :is(th, td):not(#product :is(th, td):first-of-type) {
+  flex-basis: 0%;
+  flex-grow: 2;
+}
+#product tbody {
+  background: #fff;
 }/*# sourceMappingURL=main.css.map */
