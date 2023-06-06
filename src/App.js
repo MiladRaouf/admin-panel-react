@@ -1,19 +1,13 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import AdminIndex from "./layouts/admin/AdminIndex";
-import Dashboard from "./pages/dashboard/Dashboard";
-import Product from "./pages/products/Product";
+import { BrowserRouter } from "react-router-dom";
+import AdminPagesIndex from "./pages/admin/AdminPagesIndex";
+import RegisterPagesIndex from "./pages/register/RegisterPagesIndex";
 
 function App() {
   return (
     <section>
       <BrowserRouter>
-        <AdminIndex />
-        <Routes>
-          <Route index element={<Dashboard />} />
-          <Route path="/admin/dashboard" element={<Dashboard />} />
-          <Route path="/admin/products" element={<Product />} />
-          {/* <Route index element={<Product />} /> */}
-        </Routes>
+          <AdminPagesIndex />
+          <RegisterPagesIndex />
       </BrowserRouter>
     </section>
   );

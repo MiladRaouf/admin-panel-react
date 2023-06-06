@@ -1,6 +1,6 @@
-import Table from "../../components/Table";
+import Table from "../../../components/table/Table";
 
-const Product = () => {
+const Products = () => {
     const theadObj = [
         {
             id: 1,
@@ -42,4 +42,4 @@ const Product = () => {
     );
 };
 
-export default Product;
+export default Products;

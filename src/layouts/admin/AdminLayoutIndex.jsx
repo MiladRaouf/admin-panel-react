@@ -1,8 +1,8 @@
 import { Fragment, useState } from "react";
-import Navbar from "./navbar/Navbar";
-import Sidebar from "./sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
+import Sidebar from "../../components/sidebar/Sidebar";
 
-const AdminIndex = () => {
+const AdminLayoutIndex = () => {
     const [menuBars, setMenuBars] = useState(false);
     const [openSidebar, setOpenSidebar] = useState(false);
 
@@ -19,4 +19,4 @@ const AdminIndex = () => {
     );
 }
 
-export default AdminIndex;
+export default AdminLayoutIndex;

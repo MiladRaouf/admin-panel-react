@@ -1,5 +1,5 @@
-import Cards from "./card/Cards";
-import BarChart from "./chart/BarChart";
+import Cards from "../../../components/card/Cards";
+import BarChart from "../../../components/chart/BarChart";
 
 const Dashboard = () => {
     return (
