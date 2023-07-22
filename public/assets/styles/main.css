@@ -21,26 +21,6 @@ body {
 html {
   font-size: 13px;
 }
-@media screen and (min-width: 576px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 992px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 17px;
-  }
-}
 
 img {
   -o-object-fit: cover;
@@ -60,118 +40,6 @@ h5,
 h6,
 th {
   font-weight: unset;
-}
-
-#navbar-section {
-  background: #666;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-#navbar-section nav {
-  color: #fff;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#navbar-section .account,
-#navbar-section .operations {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-#navbar-section figure {
-  background: #fff;
-  margin-bottom: unset;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-#navbar-section figcaption {
-  font-size: 1em;
-}
-#navbar-section .account img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#navbar-section i {
-  font-size: 1.1em;
-  transition: 0.2s;
-}
-#navbar-section i:hover {
-  color: #4bff03;
-}
-#navbar-section .menu-bars-on,
-#navbar-section .open-sidebar-on {
-  color: #4bff03;
-}
-
-#sidebar {
-  overflow: hidden;
-  position: fixed;
-  margin-top: 10px;
-  right: -200px;
-  transition: 0.47s ease;
-  border-radius: 8px;
-  z-index: 10;
-}
-#sidebar ul {
-  display: flex;
-  flex-direction: column;
-  padding: unset;
-  margin: unset;
-  list-style: none;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5607843137);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-}
-#sidebar ul:hover .item {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-left: 15px;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-#sidebar a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  transition: 0.2s;
-}
-#sidebar a:hover {
-  color: #4bff03;
-}
-#sidebar i {
-  width: 50px;
-  height: 50px;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#sidebar .item {
-  margin: unset;
-  padding-left: 0;
-  width: 0;
-  transition: padding 0.2s;
-  opacity: 0;
-}
-#sidebar.sidebar-show {
-  right: 10px;
-}
-#sidebar .item.sidebar-open {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-left: 15px;
-  opacity: 1;
-  transition: opacity 0.5s;
 }
 
 #cards {
@@ -253,20 +121,6 @@ th {
   font-size: 0.9em;
 }
 
-#bar-chart .chart {
-  border: 2px solid #eee;
-  border-radius: 10px;
-  padding: 15px;
-  background: #fff;
-}
-#bar-chart .title {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #555;
-  font-family: "iran-sans-bold";
-}
-
 #product {
   margin-top: 20px;
 }
@@ -305,4 +159,50 @@ th {
 }
 #product tbody {
   background: #fff;
+}
+
+#register-form, #login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#register-form form, #login-form form {
+  width: 500px;
+  border-radius: 8px;
+  padding: 15px;
+}
+#register-form button, #login-form button {
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: royalblue;
+  color: #fff;
+  width: 100%;
+  transition: 0.2s;
+}
+#register-form button:hover, #login-form button:hover {
+  background: deepskyblue;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=main.css.map */

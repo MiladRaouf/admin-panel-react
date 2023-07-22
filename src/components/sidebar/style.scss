@@ -1,0 +1,70 @@
+@import '../../../public/assets/styles/_mixins.scss';
+@import '../../../public/assets/styles/_variables.scss';
+
+#sidebar {
+    overflow: hidden;
+    position: fixed;
+    margin-top: 10px;
+    right: -200px;
+    transition: 0.47s ease;
+    border-radius: 8px;
+    z-index: 10;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: unset;
+        margin: unset;
+        list-style: none;
+        overflow: hidden;
+        background: #0000008f;
+        backdrop-filter: blur(30px);
+
+        &:hover .item {
+            width: fit-content;
+            padding-left: 15px;
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+
+        &:hover {
+            color: $buttonHover;
+        }
+    }
+
+    i {
+        width: 50px;
+        height: 50px;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item {
+        margin: unset;
+        padding-left: 0;
+        width: 0;
+        transition: padding 0.2s;
+        opacity: 0;
+    }
+
+    &.sidebar-show {
+        right: 10px;
+    }
+
+    .item.sidebar-open {
+        width: fit-content;
+        padding-left: 15px;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+}

@@ -1,14 +1,12 @@
-import { BrowserRouter } from "react-router-dom";
-import AdminPagesIndex from "./pages/admin/AdminPagesIndex";
-import RegisterPagesIndex from "./pages/register/RegisterPagesIndex";
+import { useLocation } from "react-router-dom";
+import AuthLayout from "./layouts/auth/AuthLayout";
+import AdminLayout from "./layouts/admin/AdminLayout";
 
 function App() {
+  const location = useLocation();
   return (
     <section>
-      <BrowserRouter>
-          <AdminPagesIndex />
-          <RegisterPagesIndex />
-      </BrowserRouter>
+        {location.pathname.includes('/auth') ? <AuthLayout /> : <AdminLayout />}
     </section>
   );
 }

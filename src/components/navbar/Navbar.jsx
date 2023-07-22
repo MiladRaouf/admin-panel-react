@@ -1,3 +1,7 @@
+import './style.css';
+
+import { NavLink } from "react-router-dom";
+
 const Navbar = ({ menuBars, setMenuBars, openSidebar, setOpenSidebar }) => {
     return (
         <section id='navbar-section'>
@@ -13,7 +17,10 @@ const Navbar = ({ menuBars, setMenuBars, openSidebar, setOpenSidebar }) => {
                 <section className='operations'>
                     <i className="fa fa-search"></i>
                     <i className="fas fa-bell"></i>
-                    <i className="fa fa-power-off"></i>
+                    <NavLink className={'register-link'} to={"/auth/register"}>
+                        <i className="fa fa-power-off"></i>
+                    </NavLink>
+                    <NavLink to={"/auth/login"}>login</NavLink>
                 </section>
             </nav>
         </section>

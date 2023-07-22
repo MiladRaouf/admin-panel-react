@@ -1,0 +1,13 @@
+@import '../../../public/assets/styles/_mixins.scss';
+@import '../../../public/assets/styles/_variables.scss';
+
+#bar-chart {
+    font-size: 1rem;
+
+    .chart {
+        border: 2px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        background: #fff;
+    }
+}

@@ -1,0 +1,9 @@
+#bar-chart {
+  font-size: 1rem;
+}
+#bar-chart .chart {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+}/*# sourceMappingURL=style.css.map */

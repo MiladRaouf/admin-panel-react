@@ -1,12 +1,10 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Dashboard from "./dashboard/Dashboard";
 import Products from "./products/Products";
-import AdminLayoutIndex from "../../layouts/admin/AdminLayoutIndex";
 
-const AdminPagesIndex = () => {
+const AdminContents = () => {
     return (
         <>
-            <AdminLayoutIndex />
             <Routes>
                 <Route index element={<Dashboard />} />
                 <Route path="/admin/dashboard" element={<Dashboard />} />
@@ -16,4 +14,4 @@ const AdminPagesIndex = () => {
     );
 }
 
-export default AdminPagesIndex;
+export default AdminContents;
